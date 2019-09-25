@@ -7,7 +7,7 @@ This is a tool used to compute post-set stats from slp files for Melee tournamen
 2. Move slp files from the same set to the folder containing the executable
 3. Run the executable, will generate an output.json file with the stats
 ## Limitations
-1. Cannot know which player played what character
+1. Cannot know who the players were, the best that can be known is the nametag used
 2. If the players change ports during the set, the stats cannot be computed
 ## Output
 The output json file contains three fields: `games`, `summary`, and `btsSummary`
