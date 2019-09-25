@@ -1,7 +1,9 @@
 # Slippi Set Stats
 This is a tool used to compute post-set stats from slp files for Melee tournaments. It is intended to be used as part of a production workflow to display post-set stats such as what was done at Mainstage 2019.
+
+![image](https://user-images.githubusercontent.com/1534726/65564174-e8c92080-df00-11e9-9805-bfc83638f19d.png)
 ## Usage
-1. Download executable for your operating system from the Releases tab
+1. Download executable for your operating system from the [Releases](https://github.com/JLaferri/slippi-set-stats/releases) tab
 2. Move slp files from the same set to the folder containing the executable
 3. Run the executable, will generate an output.json file with the stats
 ## Limitations
