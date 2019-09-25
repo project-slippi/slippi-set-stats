@@ -1,0 +1,6 @@
+*.slp
+slippi-set-stats-linux
+slippi-set-stats-macos
+slippi-set-stats-win.exe
+output.json
+node_modules

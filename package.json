@@ -1,0 +1,17 @@
+{
+  "name": "slippi-set-stats",
+  "version": "1.0.0",
+  "description": "Compute set stats from slp files",
+  "main": "main.js",
+  "bin": "bin.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Jas Laferriere",
+  "license": "ISC",
+  "dependencies": {
+    "lodash": "^4.17.15",
+    "moment": "^2.24.0",
+    "slp-parser-js": "^3.0.0"
+  }
+}
