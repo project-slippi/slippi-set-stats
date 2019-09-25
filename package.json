@@ -5,7 +5,8 @@
   "main": "main.js",
   "bin": "bin.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build": "pkg . --out-path \"build\""
   },
   "author": "Jas Laferriere",
   "license": "ISC",
