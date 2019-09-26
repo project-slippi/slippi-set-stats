@@ -337,12 +337,12 @@ const statDefininitions = {
 // Websocket
 var lastmessage = null; // The last message sent so new clients or reconnecting clients get the latest data
 const ws = new WebSocket.Server({port: 1665}); //port is just 999 + 666
-const clients = []; // keep track of all of the clients
 
 /* when the client connects send the last message if it exists and then add the socket to the clients array */
 ws.on('connection', (sock) => { 
-	if (lastmessage) sock.send(lastmessage);
-	clients.push(sock);
+	if (lastmessage) {
+    sock.send(lastmessage);
+  }
 });
 
 function genOverallRatioStat(games, playerIndex, field, fixedNum, type = "ratio") {
@@ -621,8 +621,10 @@ function writeToFile(output) {
 }
 
 function sendWithWebsocket() {
-  _.each(clients, (client) => {
-    client.send(lastmessage);
+  _.each(wss.clients, (client) => {
+    if (client.readyState === WebSocket.OPEN) {
+      client.send(data);
+    }
   });
   console.log("Finished sending stats to websocket clients!");
 }
