@@ -13,6 +13,7 @@
   "dependencies": {
     "lodash": "^4.17.15",
     "moment": "^2.24.0",
-    "slp-parser-js": "^3.0.0"
+    "slp-parser-js": "^3.0.0",
+    "ws": "^7.1.2"
   }
 }
